@@ -1,0 +1,19 @@
+<%- include('partials/header') %>    
+    <%- include('partials/navbar') %>
+
+    <div class="container">
+            <h2>Write post</h2>
+         
+            <form action="/post-article" method="post">
+                <div class="mb-3">
+                    <input type="text" name="title" class="form-control" placeholder="Title">
+                </div>
+
+                <div class="mb-3">
+                    <textarea name="content" cols="30" rows="10" class="form-control" placeholder="Write your text"></textarea>
+                </div>
+                <input type="reset" class="btn btn-outline-primary">
+                <input type="submit" class="btn btn-primary">
+            </form>
+            
+    </div>

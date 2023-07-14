@@ -1,0 +1,19 @@
+    <%- include('partials/header') %>    
+    <%- include('partials/navbar') %>
+
+    <section id="hero">
+        <img src="images/hero.jpg" class="w-100" alt="">
+    </section>
+
+    <section class="container py-5">
+        <div class="row">
+            <% services.forEach((service)=>{ %>
+                <div class="col text-center">
+                    <h3 class="text-uppercase"><%- service.heading %></h3>
+                    <p><%- service.content %></p>
+                    <a href="#">Read More</a>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    <%- include('partials/footer') %>

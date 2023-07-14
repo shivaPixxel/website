@@ -1,0 +1,18 @@
+<%- include('partials/header') %>    
+    <%- include('partials/navbar') %>
+    
+    <div class="container py-5">
+        <a href="/post"> Write Article </a>
+    </div>
+
+    <section class="container">
+        <div class="row">
+            <% articles.forEach((article)=>{ %>
+                <div class="col-6">
+                    <h2><%- article.title %>  </h2>
+                    <p> <%- article.content %> </p>
+                </div>
+            <% }) %>           
+        </div>
+    </section>   
+    <%- include('partials/footer') %>
